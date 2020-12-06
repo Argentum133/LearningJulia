@@ -19,7 +19,7 @@ md"_homework 0, version 2_"
 # ╔═╡ 7308bc54-e6cd-11ea-0eab-83f7535edf25
 # edit the code below to set your name and kerberos ID (i.e. email without @mit.edu)
 
-student = (name = "Jaemin Eun", kerberos_id = "jazz")
+student = (name = "Jaemin Eun", kerberos_id = "jeun")
 
 # press the ▶ button in the bottom right of this cell to run your edits
 # or use Shift+Enter
@@ -30,7 +30,7 @@ student = (name = "Jaemin Eun", kerberos_id = "jazz")
 # ╔═╡ cdff6730-e785-11ea-2546-4969521b33a7
 md"""
 
-Submission by: **_$(student.name)_** ($(student.kerberos_id)@mit.edu)
+Submission by: **_$(student.name)_** ($(student.kerberos_id)@terpmail.umd.edu)
 """
 
 # ╔═╡ a2181260-e6cd-11ea-2a69-8d9d31d1ef0e
@@ -99,8 +99,13 @@ Write a function newton_sqrt(x) which implements the above algorithm."
 
 # ╔═╡ 4896bf0c-e754-11ea-19dc-1380bb356ab6
 function newton_sqrt(x, error_margin=0.01, a=x / 2) # a=x/2 is the default value of `a`
-	return x # this is wrong, write your code here!
+	while abs(x-a*a)>error_margin
+		a=(x+a^2)/2a
+	end 
+	
+	return a 
 end
+#This code follows the ideas of the Newton Raphson Method
 
 # ╔═╡ 7a01a508-e78a-11ea-11da-999d38785348
 newton_sqrt(2)
