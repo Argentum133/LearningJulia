@@ -87,14 +87,17 @@ md"#### Exerise 1.1
 "
 
 # ╔═╡ f51333a6-eded-11ea-34e6-bfbb3a69bcb0
-random_vect = missing # replace this with your code!
+random_vect = rand(10) # replace this with your code!
 
 # ╔═╡ cf738088-eded-11ea-2915-61735c2aa990
 md"👉 Make a function `mean` using a `for` loop, which computes the mean/average of a vector of numbers."
 
 # ╔═╡ 0ffa8354-edee-11ea-2883-9d5bfea4a236
 function mean(x)
-	
+	for i in x
+		#m = i + x[i]
+		#mean = total/length(x)
+	end
 	return missing
 end
 
@@ -189,7 +192,7 @@ end
 # ╔═╡ 56ced344-eded-11ea-3e81-3936e9ad5777
 colored_line(example_vector)
 
-# ╔═╡ b18e2c54-edf1-11ea-0cbf-85946d64b6a2
+# ╔═╡ d46618d0-3a69-11eb-11e2-03c3e6b4a1a7
 colored_line(random_vect)
 
 # ╔═╡ d862fb16-edf1-11ea-36ec-615d521e6bc0
@@ -1363,7 +1366,7 @@ with_sobel_edge_detect(sobel_camera_image)
 # ╠═56ced344-eded-11ea-3e81-3936e9ad5777
 # ╟─ad6a33b0-eded-11ea-324c-cfabfd658b56
 # ╠═f51333a6-eded-11ea-34e6-bfbb3a69bcb0
-# ╟─b18e2c54-edf1-11ea-0cbf-85946d64b6a2
+# ╠═d46618d0-3a69-11eb-11e2-03c3e6b4a1a7
 # ╟─397941fc-edee-11ea-33f2-5d46c759fbf7
 # ╟─b1d5ca28-edf6-11ea-269e-75a9fb549f1d
 # ╟─cf738088-eded-11ea-2915-61735c2aa990
